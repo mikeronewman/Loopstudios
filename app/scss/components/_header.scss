@@ -1,0 +1,47 @@
+header {
+    padding: 40px 24px;
+    color: white;
+    background: url("/dist/images/mobile/image-hero.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+
+    &__logo {
+        max-width: 50%;
+    }
+
+    // hamburger menu
+    &__mobile span {
+        width: 25px;
+        height: 2px;
+        background: $white;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    &__desktop {
+        display: none;
+    }
+
+}
+
+// header changes for 960px and above
+@media only screen and (min-width: $bp-desktop) {
+    header {
+        background: url("/dist/images/desktop/image-hero.jpg") no-repeat center center;
+        background-size: cover;
+    }
+
+    .navigation__mobile {
+        display: none;
+    }
+
+    .navigation__desktop {
+        display: block;
+    }
+}
