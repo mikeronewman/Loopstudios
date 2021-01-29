@@ -1,0 +1,31 @@
+.about {
+    margin-top: 6rem;
+    text-align: center;
+
+    &__description {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    &__text {
+        background-color: $white;
+    }
+}
+
+@media only screen and (min-width: $bp-tablet) {
+}
+
+@media only screen and (min-width: $bp-desktop) {
+    .about__image {
+        display: block;
+    }
+
+    .about__text {
+        width: 50%;
+        position: absolute;
+        right: -3rem;
+        bottom: -7.3334rem;
+        padding: 6.6667rem;
+        text-align: left;
+    }
+}

@@ -1,12 +1,15 @@
 header {
-    padding: 40px 24px;
+    padding: 40px 0;
     color: white;
-    background: url("/dist/images/mobile/image-hero.jpg") no-repeat center center;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),
+                url("/dist/images/mobile/image-hero.jpg") no-repeat center center;
     background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .navigation {
@@ -28,12 +31,17 @@ header {
         display: none;
     }
 
+    &__desktop__link:not(:last-child) {
+        margin-right: 2.3334rem;
+    }
+
 }
 
 // header changes for 960px and above
 @media only screen and (min-width: $bp-desktop) {
     header {
-        background: url("/dist/images/desktop/image-hero.jpg") no-repeat center center;
+        background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), 
+                    url("/dist/images/desktop/image-hero.jpg") no-repeat center center;
         background-size: cover;
     }
 
