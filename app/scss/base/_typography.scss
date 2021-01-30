@@ -1,0 +1,54 @@
+/*
+ Typography file only used for the following:
+    - font-family declarations
+    - font sizes
+    - font weights
+    - line-heights
+    - text colors
+*/
+
+body {
+    font-family: $font-body;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.1;
+    
+}
+
+p {
+    line-height: 1.6;
+    color: $dark-gray;
+}
+
+h1, h2, h3 {
+    font-family: $font-heading;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: $font-size-h3;
+}
+
+h2 {
+    font-size: $font-size-h4;
+}
+
+@media only screen and (min-width: $bp-tablet) {
+    h1 {
+        font-size: $font-size-h2;
+    }
+
+    h2 {
+        font-size: $font-size-h3;
+    }
+}
+
+@media only screen and (min-width: $bp-desktop) {
+    h1 {
+        font-size: $font-size-h1;
+    }
+
+    h2 {
+        font-size: $font-size-h2;
+    }
+}
