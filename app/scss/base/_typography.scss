@@ -33,6 +33,10 @@ h2 {
     font-size: $font-size-h4;
 }
 
+h3 {
+    font-size: $font-size-h4;
+}
+
 @media only screen and (min-width: $bp-tablet) {
     h1 {
         font-size: $font-size-h2;
@@ -50,5 +54,9 @@ h2 {
 
     h2 {
         font-size: $font-size-h2;
+    }
+
+    h3 {
+        font-size: $font-size-h3;
     }
 }
