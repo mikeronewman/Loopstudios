@@ -17,7 +17,8 @@ $font-size-h5: 1.333rem;
 $font-size-xtra-small: 0.75rem;
 
 // Gradients
-$linear-gradient-light: rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2);
+$linear-gradient-darken: rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2);
+$linear-gradient-light: rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5);
 
 // Breakpoints
 // pixels / base font size (15px) is equal to ems

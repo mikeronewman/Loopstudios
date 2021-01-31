@@ -1,6 +1,40 @@
-footer {
+.footer {
     margin-top: 150px;
     background-color: $black;
     color: $white;
     text-align: center;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    // display social icons inline-block
+    img {
+        display: inline-block;
+    }
+
+    &__logo {
+        margin: 60px auto;
+    }
+
+    &__nav {
+        a {
+            display: block;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+    }
+
+    &__socialbox {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    &__copyright {
+        margin-top: 50px;
+        padding-bottom: 80px;
+    }
+
 }
