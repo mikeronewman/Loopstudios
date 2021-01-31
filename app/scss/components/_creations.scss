@@ -7,61 +7,89 @@
         flex-basis: 100%;
     }
 
+    &__link::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        transition: all ease-in-out 0.4s;
+    }
+
+    //.creations__link:hover::before
+    &__link:hover::before,
+    &__link:focus::before,
+    &__link:active::before {
+        filter: opacity(0.5) contrast(0.5);
+    }
+
+    &__link:hover,
+    &__link:focus,
+    &__link:active {
+        color: rgba($black, 0.8);
+    }
+
     &__link {
-        display: flex;
+        position: relative;
         color: $white;
         width: 100%;
         height: 150px;
         padding: 1.5rem;
         margin-top: 2rem;
-    
-        h3 {
-            align-self: flex-end;
+        transition: all ease-in-out 0.4s;
+
+        &--contents {
+            position: relative;
+            display: flex;
+            align-content: flex-end;
+
+        }
+
+        &--title {
             width: 40%;
+        }
+
+        &--earth::before {
+            background: linear-gradient($linear-gradient-darken),
+                        url("/dist/images/mobile/image-deep-earth.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        &--arcade::before {
+            background: linear-gradient($linear-gradient-darken),
+                        url("/dist/images/mobile/image-night-arcade.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        &--soccer::before {
+            background: linear-gradient($linear-gradient-darken),
+                        url("/dist/images/mobile/image-soccer-team.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        &--grid::before {
+            background: linear-gradient($linear-gradient-darken),
+                        url("/dist/images/mobile/image-grid.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        &--above::before {
+            background: linear-gradient($linear-gradient-darken),
+                        url("/dist/images/mobile/image-from-above.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        &--borealis::before {
+            background: linear-gradient($linear-gradient-darken),
+                        url("/dist/images/mobile/image-pocket-borealis.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        &--curiosity::before {
+            background: linear-gradient($linear-gradient-darken),
+                        url("/dist/images/mobile/image-curiosity.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        &--fisheye::before {
+            background: linear-gradient($linear-gradient-darken),
+                        url("/dist/images/mobile/image-fisheye.jpg") no-repeat center center;
+            background-size: cover;
         }
     }
 
-    
-    &__earth {
-        background: linear-gradient($linear-gradient-darken),
-                    url("/dist/images/mobile/image-deep-earth.jpg") no-repeat center center;
-        background-size: cover;
-    }
-    &__arcade {
-        background: linear-gradient($linear-gradient-darken),
-                    url("/dist/images/mobile/image-night-arcade.jpg") no-repeat center center;
-        background-size: cover;
-    }
-    &__soccer {
-        background: linear-gradient($linear-gradient-darken),
-                    url("/dist/images/mobile/image-soccer-team.jpg") no-repeat center center;
-        background-size: cover;
-    }
-    &__grid {
-        background: linear-gradient($linear-gradient-darken),
-                    url("/dist/images/mobile/image-grid.jpg") no-repeat center center;
-        background-size: cover;
-    }
-    &__above {
-        background: linear-gradient($linear-gradient-darken),
-                    url("/dist/images/mobile/image-from-above.jpg") no-repeat center center;
-        background-size: cover;
-    }
-    &__borealis {
-        background: linear-gradient($linear-gradient-darken),
-                    url("/dist/images/mobile/image-pocket-borealis.jpg") no-repeat center center;
-        background-size: cover;
-    }
-    &__curiosity {
-        background: linear-gradient($linear-gradient-darken),
-                    url("/dist/images/mobile/image-curiosity.jpg") no-repeat center center;
-        background-size: cover;
-    }
-    &__fisheye {
-        background: linear-gradient($linear-gradient-darken),
-                    url("/dist/images/mobile/image-fisheye.jpg") no-repeat center center;
-        background-size: cover;
-    }
 
 }
 
@@ -94,48 +122,50 @@
         &__link {
             height: 450px;
             width: 23%;
+
+            &--earth::before {
+                background: linear-gradient($linear-gradient-darken),
+                            url("/dist/images/desktop/image-deep-earth.jpg") no-repeat center center;
+                background-size: cover;
+            }
+            &--arcade::before {
+                background: linear-gradient($linear-gradient-darken),
+                            url("/dist/images/desktop/image-night-arcade.jpg") no-repeat center center;
+                background-size: cover;
+            }
+            &--soccer::before {
+                background: linear-gradient($linear-gradient-darken),
+                            url("/dist/images/desktop/image-soccer-team.jpg") no-repeat center center;
+                background-size: cover;
+            }
+            &--grid::before {
+                background: linear-gradient($linear-gradient-darken),
+                            url("/dist/images/desktop/image-grid.jpg") no-repeat center center;
+                background-size: cover;
+            }
+            &--above::before {
+                background: linear-gradient($linear-gradient-darken),
+                            url("/dist/images/desktop/image-from-above.jpg") no-repeat center center;
+                background-size: cover;
+            }
+            &--borealis::before {
+                background: linear-gradient($linear-gradient-darken),
+                            url("/dist/images/desktop/image-pocket-borealis.jpg") no-repeat center center;
+                background-size: cover;
+            }
+            &--curiosity::before {
+                background: linear-gradient($linear-gradient-darken),
+                            url("/dist/images/desktop/image-curiosity.jpg") no-repeat center center;
+                background-size: cover;
+            }
+            &--fisheye::before {
+                background: linear-gradient($linear-gradient-darken),
+                            url("/dist/images/desktop/image-fisheye.jpg") no-repeat center center;
+                background-size: cover;
+            }
         }
 
-        &__earth {
-            background: linear-gradient($linear-gradient-light),
-                        url("/dist/images/desktop/image-deep-earth.jpg") no-repeat center center;
-            background-size: cover;
-        }
-        &__arcade {
-            background: linear-gradient($linear-gradient-light),
-                        url("/dist/images/desktop/image-night-arcade.jpg") no-repeat center center;
-            background-size: cover;
-        }
-        &__soccer {
-            background: linear-gradient($linear-gradient-light),
-                        url("/dist/images/desktop/image-soccer-team.jpg") no-repeat center center;
-            background-size: cover;
-        }
-        &__grid {
-            background: linear-gradient($linear-gradient-light),
-                        url("/dist/images/desktop/image-grid.jpg") no-repeat center center;
-            background-size: cover;
-        }
-        &__above {
-            background: linear-gradient($linear-gradient-light),
-                        url("/dist/images/desktop/image-from-above.jpg") no-repeat center center;
-            background-size: cover;
-        }
-        &__borealis {
-            background: linear-gradient($linear-gradient-light),
-                        url("/dist/images/desktop/image-pocket-borealis.jpg") no-repeat center center;
-            background-size: cover;
-        }
-        &__curiosity {
-            background: linear-gradient($linear-gradient-light),
-                        url("/dist/images/desktop/image-curiosity.jpg") no-repeat center center;
-            background-size: cover;
-        }
-        &__fisheye {
-            background: linear-gradient($linear-gradient-light),
-                        url("/dist/images/desktop/image-fisheye.jpg") no-repeat center center;
-            background-size: cover;
-        }
+
     }
 }
 
