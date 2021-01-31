@@ -21,6 +21,6 @@ $linear-gradient-light: rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2);
 
 // Breakpoints
 // pixels / base font size (15px) is equal to ems
-$bp-tablet: 42.6667em; // 640px
-$bp-desktop: 64em; // 1100px
-$bp-desktop-large: 96em; // 1440px
+$bp-tablet: 640px; // 640px
+$bp-desktop: 1100px; // 1100px
+$bp-desktop-large: 1440px; // 1440px

@@ -1,59 +1,140 @@
-.creations__link {
-    color: $white;
-    width: 100%;
-    height: 150px;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    position: relative;
+.creations {
+    color: white;
 
-    h3 {
-        position: absolute;
-        bottom: 0;
-        width: 40%;
+    &__headline {
+        color: $black;
+        flex-basis: 100%;
+    }
+
+    &__link {
+        display: flex;
+        color: $white;
+        width: 100%;
+        height: 150px;
+        padding: 1.5rem;
+        margin-top: 2rem;
+        // position: relative;
+    
+        h3 {
+            align-self: flex-end;
+            width: 40%;
+        }
+    }
+    
+    &__earth {
+        background: linear-gradient($linear-gradient-light),
+                    url("/dist/images/mobile/image-deep-earth.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    &__arcade {
+        background: linear-gradient($linear-gradient-light),
+                    url("/dist/images/mobile/image-night-arcade.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    &__soccer {
+        background: linear-gradient($linear-gradient-light),
+                    url("/dist/images/mobile/image-soccer-team.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    &__grid {
+        background: linear-gradient($linear-gradient-light),
+                    url("/dist/images/mobile/image-grid.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    &__above {
+        background: linear-gradient($linear-gradient-light),
+                    url("/dist/images/mobile/image-from-above.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    &__borealis {
+        background: linear-gradient($linear-gradient-light),
+                    url("/dist/images/mobile/image-pocket-borealis.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    &__curiosity {
+        background: linear-gradient($linear-gradient-light),
+                    url("/dist/images/mobile/image-curiosity.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    &__fisheye {
+        background: linear-gradient($linear-gradient-light),
+                    url("/dist/images/mobile/image-fisheye.jpg") no-repeat center center;
+        background-size: cover;
+    }
+
+}
+
+@media(min-width: $bp-tablet) {
+    .creations {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__headline {
+            text-align: left;
+        }
+
+        &__link {
+            width: 49%;
+            height: 200px;
+            margin-top: 0;
+            margin-bottom: 30px;
+
+            h3 {
+                width: 100%;
+            }
+        }
     }
 }
 
-.creations__button {
-    display: none;
+@media(min-width: $bp-desktop) {
+    .creations {
+        &__link {
+            height: 450px;
+            width: 23%;
+        }
+
+        &__earth {
+            background: linear-gradient($linear-gradient-light),
+                        url("/dist/images/desktop/image-deep-earth.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        &__arcade {
+            background: linear-gradient($linear-gradient-light),
+                        url("/dist/images/desktop/image-night-arcade.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        &__soccer {
+            background: linear-gradient($linear-gradient-light),
+                        url("/dist/images/desktop/image-soccer-team.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        &__grid {
+            background: linear-gradient($linear-gradient-light),
+                        url("/dist/images/desktop/image-grid.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        &__above {
+            background: linear-gradient($linear-gradient-light),
+                        url("/dist/images/desktop/image-from-above.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        &__borealis {
+            background: linear-gradient($linear-gradient-light),
+                        url("/dist/images/desktop/image-pocket-borealis.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        &__curiosity {
+            background: linear-gradient($linear-gradient-light),
+                        url("/dist/images/desktop/image-curiosity.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        &__fisheye {
+            background: linear-gradient($linear-gradient-light),
+                        url("/dist/images/desktop/image-fisheye.jpg") no-repeat center center;
+            background-size: cover;
+        }
+    }
 }
 
-.creations__earth {
-    background: linear-gradient($linear-gradient-light),
-                url("/dist/images/mobile/image-deep-earth.jpg") no-repeat center center;
-    background-size: cover;
-}
-.creations__arcade {
-    background: linear-gradient($linear-gradient-light),
-                url("/dist/images/mobile/image-night-arcade.jpg") no-repeat center center;
-    background-size: cover;
-}
-.creations__soccer {
-    background: linear-gradient($linear-gradient-light),
-                url("/dist/images/mobile/image-soccer-team.jpg") no-repeat center center;
-    background-size: cover;
-}
-.creations__grid {
-    background: linear-gradient($linear-gradient-light),
-                url("/dist/images/mobile/image-grid.jpg") no-repeat center center;
-    background-size: cover;
-}
-.creations__above {
-    background: linear-gradient($linear-gradient-light),
-                url("/dist/images/mobile/image-from-above.jpg") no-repeat center center;
-    background-size: cover;
-}
-.creations__borealis {
-    background: linear-gradient($linear-gradient-light),
-                url("/dist/images/mobile/image-pocket-borealis.jpg") no-repeat center center;
-    background-size: cover;
-}
-.creations__curiosity {
-    background: linear-gradient($linear-gradient-light),
-                url("/dist/images/mobile/image-curiosity.jpg") no-repeat center center;
-    background-size: cover;
-}
-.creations__fisheye {
-    background: linear-gradient($linear-gradient-light),
-                url("/dist/images/mobile/image-fisheye.jpg") no-repeat center center;
-    background-size: cover;
-}
+
