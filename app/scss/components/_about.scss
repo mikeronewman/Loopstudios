@@ -16,7 +16,13 @@
     }
 }
 
-@media only screen and (min-width: $bp-desktop) {
+@media (min-width: $bp-tablet) and (max-width: $bp-desktop) {
+    .about__description {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: $bp-desktop) {
     .about__image {
         margin: 0;
     }
