@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 
   <!-- User Styles -->
-  <link rel="stylesheet" href="/dist/style.css?cb=1612202403971">
+  <link rel="stylesheet" href="/dist/style.css?cb=1612202582427">
 </head>
 <body>
 
@@ -160,7 +160,13 @@
     </div> -->
   </footer>
 
-  <script src="/dist/all.js">
+  <script>
+    const hamburger = document.getElementById('hamburger');
+
+    hamburger.onclick = function() {
+        hamburger.classList.toggle('open');
+    }
+  </script>
 
 </body>
 </html>
