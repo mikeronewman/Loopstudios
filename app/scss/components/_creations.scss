@@ -1,11 +1,48 @@
 .creations {
-    margin-top: 150px;
     color: white;
+
+    &__flex--wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+    }
 
     &__headline {
         color: $black;
-        flex-basis: 100%;
+        display: inline-block;
     }
+
+    &__button {
+        color: $black;
+        padding: 15px 35px;
+        border: 2px solid $black;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+
+        &--mobile {
+            width: 50%;
+            display: block;
+            margin: 2rem auto;
+
+        }
+
+        &--desktop {
+            display: none;
+        }
+    }
+
+    &__button:hover,
+    &__button:focus,
+    &__button:active {
+        background: $black;
+        color: $white;
+    }
+
+    &__button::before {
+        content: none;
+    }
+
 
     &__link::before {
         content: "";
@@ -100,7 +137,7 @@
         justify-content: space-between;
 
         &__headline {
-            margin-bottom: 100px;
+            margin: 100px 0;
             text-align: left;
         }
 
@@ -113,6 +150,14 @@
             h3 {
                 width: 100%;
             }
+        }
+
+        &__button--mobile {
+            display: none;
+        }
+
+        &__button--desktop {
+            display: block;
         }
     }
 }
