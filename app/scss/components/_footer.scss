@@ -37,5 +37,51 @@
         margin-top: 50px;
         padding-bottom: 80px;
     }
+}
 
+@media(min-width: $bp-desktop) {
+    .footer {
+
+        .wrapper {
+            padding-top: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        &__logo {
+            margin: 0;
+            margin-bottom: 30px;
+        }
+
+        &__nav {
+            display: block;
+            margin: 0;
+            margin-bottom: 30px;
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            text-align: left;
+            a {
+                margin-right: 20px;
+            }
+        }
+
+        &__socialbox {
+            display: block;
+            margin: 0;
+            text-align: right;
+            margin-bottom: 30px;
+            justify-self: end;
+            a {
+                margin-left: 20px;
+            }
+        }
+
+        &__copyright {
+            padding: 0;
+            margin: 0;
+            text-align: right;
+            margin-bottom: 30px;
+        }
+    }
 }
